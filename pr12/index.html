@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Обработка событий</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<header><h1>Практическая работа: События</h1></header>
+<section>
+<div class="task-area">
+<h3>Задача 1: Базовые обработчики</h3>
+<button id="basic-btn">Нажми меня</button>
+<div id="basic-output" class="output">Статус</div>
+<div class="color-box" id="color-box">Наведи</div>
+<div id="mouse-output" class="output">Координаты</div>
+</div>
+<div class="task-area">
+<h3>Задача 2: Клавиатура</h3>
+<input type="text" id="key-input" placeholder="Нажмите клавишу">
+<div id="key-output" class="output"></div>
+</div>
+<div class="task-area">
+<h3>Задача 3: Делегирование</h3>
+<div class="item-list" id="item-list">
+<div class="item">Элемент 1 <span class="delete">X</span></div>
+<div class="item">Элемент 2 <span class="delete">X</span></div>
+<div class="item">Элемент 3 <span class="delete">X</span></div>
+</div>
+<button id="add-item-btn">Добавить</button>
+<div id="delegation-output" class="output">Выбрано: 0</div>
+</div>
+<div class="task-area">
+<h3>Задача 4: Предотвращение</h3>
+<a href="https://example.com" id="prevent-link" class="prevent-link">Ссылка</a>
+<form id="prevent-form" class="prevent-form">
+<input type="text" placeholder="Текст">
+<button type="submit">Отправить</button>
+</form>
+<div id="prevention-output" class="output"></div>
+</div>
+<div class="task-area">
+<h3>Задача 5: Кастомные события</h3>
+<button id="trigger-custom">Запустить</button>
+<button id="multiple-listeners">Несколько</button>
+<div id="custom-output" class="output"></div>
+</div>
+<div class="task-area">
+<h3>Задача 6: Загрузка</h3>
+<button id="load-image">Загрузить</button>
+<button id="load-error">Ошибка</button>
+<div class="image-container" id="image-container"></div>
+</div>
+<div class="task-area">
+<h3>Задача 7: Таймеры</h3>
+<button id="start-timer">Старт</button>
+<button id="stop-timer">Стоп</button>
+<button id="debounce-btn">Debounce</button>
+<button id="throttle-btn">Throttle</button>
+<div id="timer-output" class="output">Таймер: 0</div>
+<div id="async-output" class="output"></div>
+</div>
+</section>
+<footer><p>Проверьте консоль</p></footer>
+</div>
+<script src="events-tasks.js"></script>
+<script src="events-tests.js"></script>
+</body>
+</html>
