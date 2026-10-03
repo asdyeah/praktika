@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Асинхронные операции</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+<header><h1>Практическая работа: Асинхронные операции</h1></header>
+<section>
+<div class="task-area">
+<h3>Задача 1: Промисы</h3>
+<button id="basic-promise">Базовый промис</button>
+<button id="promise-chain">Цепочка</button>
+<button id="promise-error">С ошибкой</button>
+<div id="promise-output" class="output"></div>
+</div>
+<div class="task-area">
+<h3>Задача 2: Async/Await</h3>
+<button id="basic-async">Базовый</button>
+<button id="async-error">С ошибкой</button>
+<button id="async-parallel">Параллельно</button>
+<div id="async-output" class="output"></div>
+</div>
+<div class="task-area">
+<h3>Задача 3: API</h3>
+<button id="fetch-users">Пользователи</button>
+<button id="fetch-post">Создать пост</button>
+<button id="fetch-error">Ошибка</button>
+<div id="api-output" class="output"></div>
+<div id="api-data" class="data-container"></div>
+</div>
+<div class="task-area">
+<h3>Задача 4: Таймеры</h3>
+<button id="start-interval">Старт</button>
+<button id="stop-interval">Стоп</button>
+<button id="delay-promise">Задержка</button>
+<div id="interval-output" class="output">Интервал: 0</div>
+<div id="timer-output" class="output"></div>
+</div>
+<div class="task-area">
+<h3>Задача 5: Ошибки</h3>
+<button id="try-catch">Try/Catch</button>
+<button id="multiple-errors">Множественные</button>
+<button id="retry-pattern">Retry</button>
+<div id="error-output" class="output"></div>
+</div>
+<div class="task-area">
+<h3>Задача 6: Параллельные</h3>
+<button id="promise-all">Promise.all</button>
+<button id="promise-race">Promise.race</button>
+<button id="promise-allSettled">allSettled</button>
+<div id="parallel-output" class="output"></div>
+</div>
+<div class="task-area">
+<h3>Задача 7: Сценарии</h3>
+<button id="sequential-requests">Последовательно</button>
+<button id="upload-simulation">Загрузка</button>
+<button id="cache-requests">Кэш</button>
+<div id="scenario-output" class="output"></div>
+<div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+</div>
+</section>
+<footer><p>Проверьте консоль</p></footer>
+</div>
+<script src="async-tasks.js"></script>
+<script src="async-tests.js"></script>
+</body>
+</html>
