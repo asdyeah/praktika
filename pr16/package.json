@@ -1,6 +1,8 @@
 ﻿{
   "name": "pr16",
   "version": "1.0.0",
-  "main": "app.js",
-  "dependencies": { "express": "^4.19.2" }
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
